@@ -1,0 +1,14 @@
+{
+    "model": "gpt-4-turbo",
+    "messages": [
+        {
+            "role": "system",
+            "content": "You analyze user sentiment."
+        },
+        {
+            "role": "user",
+            "content": "Analyze the sentiment for user 'Alice'."
+        }
+    ],
+    "id": 101
+}
