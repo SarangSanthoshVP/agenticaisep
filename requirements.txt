@@ -1,0 +1,9 @@
+# Core GenAI & Structured Output Packages
+google-genai==2.25.0
+instructor==1.17.0
+pydantic==2.13.5
+python-dotenv==1.2.3
+requests==2.34.2
+
+# Notebook Support
+ipykernel==7.3.0

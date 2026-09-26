@@ -1,0 +1,29 @@
+{
+  "editor.inlineSuggest.enabled": true,
+  "notebook.inlineSuggest.enabled": true,
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on"
+  },
+  "editor.parameterHints.enabled": true,
+  "editor.tabCompletion": "on",
+  "[python]": {
+    "editor.inlineSuggest.enabled": true,
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "on",
+      "strings": "on"
+    }
+  },
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv13\\Scripts\\python.exe",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/.venv13/Lib/site-packages",
+    "${workspaceFolder}\\.venv13\\Lib\\site-packages",
+    "C:\\Users\\vaish\\agenticaisep\\.venv13\\Lib\\site-packages"
+  ],
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingImports": "none"
+  }
+}
