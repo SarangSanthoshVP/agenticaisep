@@ -1,11 +1,24 @@
 from dataclasses import dataclass, asdict
 
-@dataclass        #telling python that this is a data class and it takes care of the init method and other methods
+@dataclass   #holding structured data     #telling python that this is a data class and it takes care of the init method and other methods
 class GeminiInput:
     model: str
     prompt: str
     tokens: int
     temperature=10.0
+
+#type annotations-- model:Str
+
+
+
+# Python gives us @dataclass so that we don't have to manually write the __init__().
+# class GeminiInput:
+
+#     def __init__(self, model, prompt, token, temperature):
+#         self.model = model
+#         self.prompt = prompt
+#         self.token = token
+#         self.temperature = temperature
 
 
 def call_gemini(geminiInput: GeminiInput): #telling geminiInput is of type of class GeminiInput
@@ -22,7 +35,8 @@ input = GeminiInput(
 
 input.model = "3.8-pro"
 
-print(asdict(input))
+print(input)
+print(asdict(input)) #convert object into a normal Python dictionary.
 
 print("\n")
 
@@ -33,3 +47,6 @@ print("\n")
 input.prompt = "What is Python?"
 
 call_gemini(input)
+
+
+#in dataclass problem is no validation if model is passed as int it accepts ,whereas pydantic convert it to str 

@@ -1,3 +1,8 @@
+#**kwargs is a Python feature that lets a function accept any number of named/keyword arguments
+
+#You don't want to define every possible parameter in the function: since for each case the parameters may be different or there is possibiliy of too many parameters
+
+
 def make_api_call(model, prompt, **params):
     print("Model:", model)
     print("Prompt:", prompt)
